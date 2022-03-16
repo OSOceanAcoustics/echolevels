@@ -25,3 +25,14 @@ Level | Description | Implementation in the proposed pipeline | Required ancilla
 
 - \*Can be expanded to include removal of other noise sources, such as electronic or acoustic interference.
 - \*\*Can be expanded to include outputs from other common analyses of lower-level data, such as acoustically detected animal aggregations, target strength (TS, units: dB re 1 m2) of individual animals, summary statistics of echogram features, biomass estimation, as well as species-level data labels useful for supervised machine learning developments
+
+## References
+
+- [22]	C. L. Parkinson, A. Ward, and M. D. King, Eds., Earth science reference handbook: A guide to NASA’s Earth Science Program and Earth Observing Satellite Missions. National Aeronautics and Space Administration, 2006.
+- [39]	NASA, “Data Processing Levels | Earthdata,” Aug. 23, 2019. https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy/data-levels/.
+- [40]	K. Heaney, B. Martin, J. Miksis-Olds, T. Moore, J. Warren, and M. Ainslie, “ADEON data processing specification. Version 1.0,” Technical report by Applied Ocean Sciences for Prime Contract No. M16PC00003, Apr. 2020. [Online]. Available: https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf.
+- [41]	IFREMER, “Processing Levels - Oceanographic Data,” Nov. 01, 2019. http://en.data.ifremer.fr/All-about-data/Data-management/Processing-levels.
+- [42]	NEON, “Data Processing & Publication - Open Data to Understand our Ecosystems.” https://www.neonscience.org/data/about-data/data-processing-publication.
+- [43]	OOI, “Ocean Observatories Initiative: Glossary - Data Terminology,” Ocean Observatories Initiative, Sep. 29, 2015. https://oceanobservatories.org/glossary/#DATATERMS.
+- [44]	J. Pearlman et al., “Evolving and sustaining Ocean Best Practices and standards for the next decade,” Front. Mar. Sci., vol. 6, 2019, doi: 10.3389/fmars.2019.00277.
+
