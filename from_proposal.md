@@ -19,12 +19,12 @@ Level | Description | Implementation in the proposed pipeline | Required ancilla
 ------|-------------|-----------------------------------------|------------------------
 0 | Raw data in vendor sensor format | Instrument-dependent raw data records |
 1 | Standardized raw data packaged with ancillary information | Zarr encoded data in SONAR-netCDF4 format | Instrument and other deployment metadata
-2 | Calibrated acoustic quantities at raw data resolution | Volume backscattering strength (Sv) | Sound speed and absorption computed from associated temperature, conductivity and depth (CTD) measurements
+2 | Calibrated acoustic quantities at raw data resolution | Volume backscattering strength (Sv, units: dB re 1 m<sup>-1</sup> | Sound speed and absorption computed from associated temperature, conductivity and depth (CTD) measurements
 3* | Averaged and/or regridded calibrated acoustic quantities | Mean volume backscattering strength (MVBS) over uniform local depth and time grids with seafloor echoes removed | Geographical location and depth of the sonar hosting platform; platform attitude (pitch, roll, heave)
-4** | Acoustically derived biological features | Multi-frequency classification results in the form of nautical area backscattering coefficients (NASC or sA) | Biological data from net trawls or underwater camera images; empirical or physics-based acoustic scattering models
+4** | Acoustically derived biological features | Multi-frequency classification results in the form of nautical area backscattering coefficients (NASC or s<sub>A</sub>, units: m<sup>2</sup> nmi<sup>-2</sup>) | Biological data from net trawls or underwater camera images; empirical or physics-based acoustic scattering models
 
 - \*Can be expanded to include removal of other noise sources, such as electronic or acoustic interference.
-- \*\*Can be expanded to include outputs from other common analyses of lower-level data, such as acoustically detected animal aggregations, target strength (TS, units: dB re 1 m2) of individual animals, summary statistics of echogram features, biomass estimation, as well as species-level data labels useful for supervised machine learning developments
+- \*\*Can be expanded to include outputs from other common analyses of lower-level data, such as acoustically detected animal aggregations, target strength (TS, units: dB re 1 m<sup>2</sup>) of individual animals, summary statistics of echogram features, biomass estimation, as well as species-level data labels useful for supervised machine learning developments
 
 ## References
 
