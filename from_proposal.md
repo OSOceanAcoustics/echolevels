@@ -34,5 +34,5 @@ Level | Description | Implementation in the proposed pipeline | Required ancilla
 - [41]	IFREMER, “Processing Levels - Oceanographic Data,” Nov. 01, 2019. http://en.data.ifremer.fr/All-about-data/Data-management/Processing-levels.
 - [42]	NEON, “Data Processing & Publication - Open Data to Understand our Ecosystems.” https://www.neonscience.org/data/about-data/data-processing-publication.
 - [43]	OOI, “Ocean Observatories Initiative: Glossary - Data Terminology,” Ocean Observatories Initiative, Sep. 29, 2015. https://oceanobservatories.org/glossary/#DATATERMS.
-- [44]	J. Pearlman et al., “Evolving and sustaining Ocean Best Practices and standards for the next decade,” Front. Mar. Sci., vol. 6, 2019, doi: 10.3389/fmars.2019.00277.
+- [44]	J. Pearlman et al., “Evolving and sustaining Ocean Best Practices and standards for the next decade,” Front. Mar. Sci., vol. 6, 2019, [doi: 10.3389/fmars.2019.00277](https://doi.org/10.3389/fmars.2019.00277).
 
