@@ -4,10 +4,15 @@
 
 The sketch below was based on the [ideas laid out in the proposal](./from_proposal.md):
 
+![data_processing_levels_old](https://user-images.githubusercontent.com/15334215/178650904-d2662ccb-3c37-40cd-8915-6ce8cb4e83b0.jpg)
+
+
 
 ## Revised version
 
 The sketch below is revised during our discussion:
+
+![data_processing_levels_new](https://user-images.githubusercontent.com/15334215/178650916-6bf133d4-8c10-49e7-a1d9-937fe4804f49.png)
 
 
 
