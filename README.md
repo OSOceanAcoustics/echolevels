@@ -13,3 +13,7 @@ Discussions on water column sonar data processing levels.
 - [science.nasa.gov: Data Processing Levels.](https://science.nasa.gov/earth-science/earth-science-data/data-processing-levels-for-eosdis-data-products/). Same table as the EarthData page, with a shorter introduction paragraph.
 - [EOS Data Products Handbook, Volume 2. October 2000](https://eospso.gsfc.nasa.gov/sites/default/files/publications/data_products_vol2_0.pdf). Starts in Foreword page IV. The introductory paragraph is a bit longer than in the other sites. The "List of Data Products (Organized by Mission Name)" that starts in page 10 provides a compact summary of the various products and levels generated from each instrument, especially for Levels 2 and higher. This is a helpful, detailed but compact view that's not available in the other sites.
 - C. L. Parkinson, A. Ward, and M. D. King, Eds., Earth science reference handbook: A guide to NASA's Earth Science Program and Earth Observing Satellite Missions. National Aeronautics and Space Administration, 2006.
+
+## Additional relevant discussions not captured in the proposal discussion
+
+- [CESBIO/Theia multitemp: The product level names, how they work ?](https://labo.obs-mip.fr/multitemp/the-product-names-how-they-work/). This is a *very* nice discussion. It covers NASA, CEOS, the THEIA Land Data Center (what's used in CESBIO/Theia?), and the author's own personal recommendation or version. Includes a brief discussion on product level name "letters" (eg, 1B, 2A).
