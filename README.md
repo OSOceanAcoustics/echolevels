@@ -4,7 +4,7 @@ Discussions on water column sonar data processing levels.
 
 - Discussion section from our 2020 OER proposal: [from_proposal.md](from_proposal.md)
 - Notes from brainstorming meetings
-  - [2022-07-12](discussion_2022-07-12.md)
+  - [2022-07-12](discussion_2022-07-12.md). Includes photos of diagrams we drew on the whiteboard
 - [Issue #2](https://github.com/uw-echospace/data-processing-levels/issues/2): Track relevant echopype issues
 
 ## Links to NASA product levels documents
