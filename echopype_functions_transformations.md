@@ -19,4 +19,5 @@ L0 (without lat-lon) -> `open_raw` -> N.P.L. [2] -> `update_platform` -> L1A [3]
 [4,5,7,10,11] -> `commongrid.compute_MVBS_index_binning` -> N.P.L. [13]
 [4,5,7,10,11] -> `commongrid.compute_NASC` -> N.P.L. [14]
 
-Not included: `qc.coerce_increasing_time`, `consolidate.swap_dims_channel_frequency`, `consolidate.add_depth`, `consolidate.add_splitbeam_angle`
+- Not included: `qc.coerce_increasing_time`, `consolidate.swap_dims_channel_frequency`, `consolidate.add_depth`, `consolidate.add_splitbeam_angle`
+- The listing is not a strictly linear, top to bottom sequence. Some entries are alternative pathways (like rows 1 and 2) or "dead ends" (row 4)
