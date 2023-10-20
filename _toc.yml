@@ -1,0 +1,15 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+chapters:
+- file: introduction.md
+- file: review-processing-levels.md
+- file: echosounder-implementation.md
+- file: references.md
+# parts:
+# - caption: Documentation
+#   chapters:
+#   - file: classes-datastructures
+#   - file: input-files
