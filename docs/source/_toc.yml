@@ -7,7 +7,7 @@ chapters:
 - file: introduction.md
 - file: review-processing-levels.md
 - file: echosounder-implementation.md
-- file: references.md
+- file: zbibliography.md
 # parts:
 # - caption: Documentation
 #   chapters:
