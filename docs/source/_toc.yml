@@ -4,9 +4,9 @@
 format: jb-book
 root: index
 chapters:
-- file: introduction.md
-- file: review-data-levels.md
-- file: echo-data-levels.md
+- file: intro.md
+- file: review.md
+- file: echodata.md
 - file: zbibliography.md
 # parts:
 # - caption: Documentation
