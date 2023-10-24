@@ -4,10 +4,10 @@
 format: jb-book
 root: index
 chapters:
-- file: introduction.md
-- file: review-processing-levels.md
-- file: echosounder-implementation.md
-- file: references.md
+- file: background.md
+- file: review.md
+- file: echodata.md
+- file: zbibliography.md
 # parts:
 # - caption: Documentation
 #   chapters:
