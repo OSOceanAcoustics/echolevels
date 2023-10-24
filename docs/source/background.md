@@ -1,4 +1,4 @@
-# Introduction
+# Background
 
 The increasing deployment of active sonar systems in a wide variety of ocean observing platforms have created unique opportunities for characterizing mid-trophic biological scatterers such as fish and zooplankton in the water column {cite}`benoitbird_2016`. Data generated from these instruments are increasingly recognized for their potential and distinctive contribution to marine ecosystem assessments and resource management, and as a critical component of observing systems for marine life {cite}`benson_2018,estes_2021,satterthwaite_2021,santora_2021,schwing_2023`.
 
