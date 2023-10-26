@@ -18,8 +18,8 @@ Weaver {cite}`weaver_processing_2014` summarized the key properties of processin
 The current NASA EOS definitions {cite}`nasa_data_2021` include five data processing levels that progress from raw data (Level 0, L0) to highly processed and regularized data products (Level 4, L4). Weaver {cite}`weaver_processing_2014` summarized an earlier version of these as follows:
 
 - L0: Reconstructed, unprocessed data at full resolution; all communications artifacts have been removed
-- L1: Level 0 data that has been time-referenced and annotated with ancillary information, including radiometric and geometric calibration coefficients, and geolocation information
-- L2: Derived geophysical variables at the same resolution and location as the Level 1 data
+- L1: L0 data that has been time-referenced and annotated with ancillary information, including radiometric and geometric calibration coefficients, and geolocation information
+- L2: Derived geophysical variables at the same resolution and location as the L1 data
 - L3: Variables mapped on uniform space-time grids, usually with some completeness and consistency
 - L4: Model output or results from analyses of lower-level data
 
