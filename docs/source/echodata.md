@@ -13,35 +13,39 @@ The IMOS SOOP-BA NetCDF convention (Ships of Opportunity Bio-Acoustic {cite}`har
 
 ## Proposed processing Levels and sub-levels
 
-### Differences in existing definitions
-The review of existing data processing level categorizations in the environmental monitoring community and the limited implementations for echosounder data highlight broad consistencies in the progression of processing levels and the criteria used to distinguish between levels. However, there are considerable differences, which reflect specific features of the observing system or goals of the group implementing the data processing level scheme. For example, L1 sometimes accommodates data products with calibration already applied. Geolocation is sometimes assigned at every data point at L1 rather than L2. Quality control steps, such as those involving distortions or noise, occur in both L1 and L2. Sub-level designations, when used, have poorly standardized meanings.
-
-### Our approach
 Our proposal for echosounder data processing levels is strongly guided by the most widely used NASA EOS scheme {cite}`weaver_processing_2014,nasa_data_2021` and also informed by the two existing implementations for echosounder data. We follow the NASA EOS number and sequence of levels from L0 to L4. We also adopt two sub-level designations for L1, L2 and L3, where the “B” sub-level data are the “A” sub-level data with additional quality control or data filtering processing steps applied. As with all other schemes, except for L0, only data products with geolocation information are assigned a data processing level code.
+
+These decisions are made based on [our review](./review.md) of existing data processing level categorizations in the environmental monitoring community and the limited implementations on echosounder data, which highlights both broad consistencies in the progression of processing levels and the criteria used to distinguish between levels, as well as the considerable differences that reflect specific features of the observing system or goals of the group implementing the data processing level scheme.
+
+ <!-- [keeping below as comments for now to keep text focused and avoid repetition] For example, L1 sometimes accommodates data products with calibration already applied. Geolocation is sometimes assigned at every data point at L1 rather than L2. Quality control steps, such as those involving distortions or noise, occur in both L1 and L2. Sub-level designations, when used, have poorly standardized meanings. -->
+
+Below are our proposed data processing levels for echosounder data, with reference to the associated implementation in the software [echopype](https://echopype.readthedocs.io) when appropriate.
 
 
 ### Level 0 (L0)
 
-**Description:** Raw data in vendor sensor format. The data files are typically binary. Associated metadata may be found in external files.
+**Description:** Raw data in manufacturer sensor format. The data files are typically binary. The associated metadata may be found in external files.
 
-**Rationale:** The use of L0 data processing level for raw data files in their original form is the most widespread practice in both satellite remote sensing {cite}`weaver_processing_2014,mittaz_applying_2019,nasa_data_2021` and echosounder data programs {cite}`haris_imos_2018,heaney_adeon_2020`.
+**Rationale:** The use of L0 data processing level for raw data files in their original format is the most widespread practice in both satellite remote sensing programs {cite}`weaver_processing_2014,mittaz_applying_2019,nasa_data_2021`  and existing echosounder data implementations {cite}`haris_imos_2018,heaney_adeon_2020`.
 
 
 ### Level 1 (L1)
 
-**Description:** Raw data packaged with ancillary information and converted and standardized to an open convention and standard data formats. Use of the ICES (International Council for the Exploration of the Sea) SONAR-netcDF4 version 1 convention {cite}`macaulay_pena_2018` is strongly recommended. While individual pings are not georeferenced, latitude and longitude coordinates are included and can be interpolated to each ping based on timestamps.
+**Description:** Raw data packaged with ancillary information and converted and standardized to common data formats based on an open convention. Use of the ICES (International Council for the Exploration of the Sea) SONAR-netcDF4 version 1 convention {cite}`macaulay_pena_2018` is strongly recommended. While individual echosounder pings may not be georeferenced, latitude and longitude coordinates are included in the data and can be interpolated to each ping based on the timestamps.
 
 L1 data is further categorized into two sub-levels:
 
-- **L1A:** Raw L0 data converted to a standardized, open format with geographic coordinates (latitude & longitude) included. Includes other ancillary information extracted from sensor-generated L0 data or other external sources. May include environmental information such as temperature, salinity and pressure. 
+- **L1A:** Raw L0 data converted to a standardized, open format with geographic coordinates (latitude & longitude) included. The data include other ancillary information extracted from echosounder-generated L0 data or other external sources, and may include environmental information such as temperature, salinity and pressure.
 - **L1B:** L1A data with quality-control steps applied, such as time-coordinate corrections that enforce strictly increasing, non-duplicate timestamps.
 
 L1 data may be distributed in the following two forms:
 
-- As sets of individual converted files as originally segmented into arbitrary time ranges during sensor file creation, or
-- Compiled into larger granules corresponding to logical deployment intervals while the sensor is active continuously. For a mooring, this may be a daily granule if the sensor is turned off on a daily cycle, while for a cruise it may represent well defined transects.
+- Sets of individual files converted from raw L0 data created by the echosounder instrument, or
+- Larger granules of compiled converted files corresponding to logical deployment or data collection intervals while the echosounder pings continuously. For a mooring, this may be a daily granule if the sensor is turned off on a daily cycle. For a research cruise, each granule may represent well defined transects.
 
-**Rationale:** Previous initiatives that have adopted data processing levels for their echosounder data holdings have focused their efforts on processed products that are most widely used, starting with Sv and similar variables (see ADEON and IMOS discussions, above). While ADEON and IMOS use different processing levels to designate this starting point (L1 and L2, respectively), both lack a more user-accessible intermediate level between the original raw data files generated by the instruments (L0) and the processed products. The need for improved accessibility to raw data motivated the development of the SONAR-netCDF4 convention (particularly version 1) and is also borne out by the development of data repositories such as the NOAA Water Column Sonar Data Archive {cite}`wall_2016`. We adopt L1 as the data processing level that reflects raw data together with metadata ancillary data converted to an accessible, convention format, SONAR-netCDF4. This approach reflects the CEOS {cite}`ceos_interoperability_2008` definition for L1 data ("Unpacked, reformatted level 0 data, with all supplemental information to be used in subsequent processing appended"). It is also consistent with the NASA EOS L1A definition and NASA EOS’ use of standardized, metadata-rich data formats for data products.
+**Rationale:** Existing implementations of echosounder data processing levels have focused their efforts on processed data products, starting with Sv and similar variables. While ADEON and IMOS use different processing levels to designate this starting point (L1 and L2, respectively), both lack a more user-accessible intermediate level between the original raw data files generated by the instruments (L0) and the processed data products. The SONAR-netCDF4 convention (particularly version 1) is motivated by the need for improved accessibility to raw data as well as the development of data repositories such as the NOAA Water Column Sonar Data Archive {cite}`wall_2016`.
+
+We specify L1 as the data processing level that contains raw data together with metadata and ancillary data converted to an accessible data format following the SONAR-netCDF4 convention. This approach follows the CEOS {cite}`ceos_interoperability_2008` definition for L1 data ("Unpacked, reformatted level 0 data, with all supplemental information to be used in subsequent processing appended"). It is also consistent with the NASA EOS L1A definition and NASA EOS' use of standardized, metadata-rich formats for data products.
 
 
 ### Level 2 (L2)
