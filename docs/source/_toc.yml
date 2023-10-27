@@ -3,11 +3,18 @@
 
 format: jb-book
 root: index
-chapters:
-- file: background.md
-- file: review.md
-- file: echodata.md
-- file: zbibliography.md
+parts:
+- caption: Introduction
+  chapters:
+  - file: background
+  - file: review
+- caption: Implementation on echosounder data
+  chapters:
+  - file: echodata_existing.md
+  - file: echodata_proposed.md
+- caption: References
+  chapters:
+  - file: zbibliography.md
 # parts:
 # - caption: Documentation
 #   chapters:
