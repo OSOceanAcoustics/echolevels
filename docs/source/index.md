@@ -1,13 +1,19 @@
 # Echosounder Data Processing Levels
 
-The [echopype](https://echopype.readthedocs.io) team is developing the specification of a set of ["Data Processing Levels"](./review.md) that categorizes data products derived from water column sonar (echosounder) data.
+"Data processing levels" are categorization of the continuum of data at different stages of processing, from raw sensor readings to derived, georeferenced data products that are ready for analysis or interpretation.
 
-See [](./background.md) for why this is important, [](./review) for a review of the use and scope of processing levels for environmental monitoring data, and [](./echodata_existing.md) and [](./echodata_proposed.md) for existing and proposed echosounder data processing levels. The proposed data processing levels are implemented in the software [echopype](https://echopype.readthedocs.io).
+This repository contains a set of proposed specifications of data processing levels for water column sonar (echosounder) data from [UW Echospace](https://uw-echospace.github.io/). We have implemented a prototype of the data processing levels proposed here in [Echopype](https://echopype.readthedocs.io).
 
-We welcome [input or questions via GitHub issues](https://github.com/uw-echospace/data-processing-levels/issues/new)!
+We welcome [input or questions via GitHub issues](https://github.com/OSOceanAcoustics/echolevels/issues/new)!
 
 
 ## Sections
 
-```{tableofcontents}
-```
+- [](./background.md): why we started this work
+- [](./review): a review of the use and scope of processing levels for environmental monitoring data
+- [](./levels_existing.md): two existing implementations of echosounder data processing levels
+- [](./levels_proposed.md): our proposed echosounder data processing levels and the underlying rationales
+
+
+<!-- ```{tableofcontents}
+``` -->
