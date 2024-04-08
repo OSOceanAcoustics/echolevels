@@ -7,6 +7,10 @@ parts:
 chapters:
 - file: background
 - file: review
+  title: Data processing levels in other domains
+    sections:
+    - file: review_canonical
+    - file: review_variations
 - file: levels_existing
 - file: levels_proposed
 - file: zbibliography
