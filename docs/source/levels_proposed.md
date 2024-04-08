@@ -1,4 +1,4 @@
-# Proposed processing levels and sub-levels
+# Proposed processing levels for echosounder data
 
 Our proposal for echosounder data processing levels is strongly guided by the most widely used NASA EOS scheme {cite}`weaver_processing_2014,nasa_data_2021` and also informed by the two existing implementations for echosounder data. We follow the NASA EOS number and sequence of levels from L0 to L4. We also adopt two sub-level designations for L1, L2 and L3, where the “B” sub-level data are the “A” sub-level data with additional quality control or data filtering processing steps applied. As with all other schemes, except for L0, only data products with geolocation information are assigned a data processing level code.
 

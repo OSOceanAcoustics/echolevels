@@ -3,24 +3,18 @@
 
 format: jb-book
 root: index
-chapters:
-- file: background
-- file: review
-  title: Data processing levels in other domains
-    sections:
-    - file: review_canonical
-    - file: review_variations
-- file: levels_existing
-- file: levels_proposed
-- file: zbibliography
-
-# - caption: Introduction
-#   chapters:
-#   - file: background
-#   - file: review
-# - caption: Implementation on echosounder data
-#   chapters:
-#   - file: levels_existing.md
-#   - file: levels_proposed.md
-# - caption: References
-#   - file: zbibliography.md
+parts:
+  - caption: Introduction
+    chapters:
+    - file: background
+    - file: review
+      sections:
+      - file: review_canonical
+      - file: review_variations
+  - caption: Implementation on echosounder data
+    chapters:
+    - file: levels_existing
+    - file: levels_proposed
+  - caption: References
+    chapters:
+    - file: zbibliography
