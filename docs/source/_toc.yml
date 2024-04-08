@@ -18,3 +18,7 @@ parts:
   - caption: References
     chapters:
     - file: zbibliography
+    - url: https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf
+      title: ADEON processing levels
+    - url: https://imos.org.au/fileadmin/user_upload/shared/SOOP/BASOOP/IMOS_SOOP-BA_NetCDF_Conventions_Version_2.2.pdf
+      title: IMOS processing levels
